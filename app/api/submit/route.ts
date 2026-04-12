@@ -28,6 +28,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ success: false, message: "Error al guardar en Google Sheets" }, { status: 500 });
     }
   } catch (error) {
+    console.error("Error en el API route:", error);
     return NextResponse.json({ success: false, message: "Error interno" }, { status: 500 });
   }
 }
