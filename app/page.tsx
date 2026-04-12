@@ -4,13 +4,26 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Zap, CheckCircle, ArrowRight } from 'lucide-react';
 
+type Question = {
+  id: string;
+  text: string;
+  type?: string;
+  options?: string[];
+};
+
+type Section = {
+  title: string;
+  content?: React.ReactNode;
+  questions?: Question[];
+};
+
 export default function EncuestaNeoBrutalism() {
   const [step, setStep] = useState(0);
   const [formData, setFormData] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
-  const sections = [
+  const sections: Section[] = [
     {
       title: "INICIO",
       content: (
@@ -97,8 +110,8 @@ export default function EncuestaNeoBrutalism() {
 
   const isStepComplete = () => {
     if (step === 0) return true;
-    const currentQ = sections[step]?.questions || [];
-    return currentQ.every(q => formData[q.id] !== undefined);
+    const currentQ: Question[] = sections[step]?.questions || [];
+    return currentQ.every((q: Question) => formData[q.id] !== undefined);
   };
 
   const nextStep = async () => {
@@ -181,7 +194,7 @@ export default function EncuestaNeoBrutalism() {
                   {currentSection.title}
                 </h2>
                 
-                {currentSection.questions?.map((q, idx) => (
+                {currentSection.questions?.map((q: Question, idx: number) => (
                   <div key={idx} className="bg-white p-6 border-4 border-black shadow-[8px_8px_0px_0px_#000] space-y-4">
                     <h3 className="text-xl md:text-2xl font-bold">{q.text}</h3>
                     
@@ -210,7 +223,7 @@ export default function EncuestaNeoBrutalism() {
                       </div>
                     ) : (
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                        {q.options?.map(opt => (
+                        {q.options?.map((opt: string) => (
                           <button
                             key={opt}
                             onClick={() => handleSelect(q.id, opt)}
