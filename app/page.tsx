@@ -74,7 +74,7 @@ export default function EncuestaNeoBrutalism() {
       title: "INFLUENCIA SOCIAL (IS)",
       questions: [
         { id: "IS01", text: "12. Mi familia apoya que compre una pila portatil ecologica.", type: "likert" },
-        { id: "IS02", text: "13. Las personas que son importantes para mí apoyarían que compre un powerbank ecológico.", type: "likert" },
+        { id: "IS02", text: "13. Las personas que son importantes para mí apoyarían que compre una pila portatil ecológica.", type: "likert" },
         { id: "IS03", text: "14. Las campañas de concientización y la opinión pública me motivan a reciclar.", type: "likert" }
       ]
     },
