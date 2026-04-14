@@ -56,9 +56,9 @@ export async function POST(req: Request) {
 
     await sheets.spreadsheets.values.append({
       spreadsheetId: GOOGLE_SPREADSHEET_ID,
-      range: 'A1', // Apuntar a A1 ayuda a Google a buscar el final de la tabla desde el principio
+      range: 'A:A', // Usamos A:A para que Google Sheets busque el final en toda la columna y no empuje las celdas desde A1
       valueInputOption: 'USER_ENTERED',
-      insertDataOption: 'INSERT_ROWS', // Obliga a insertar una nueva fila siempre, evitando sobrescribir
+      insertDataOption: 'INSERT_ROWS', // Inserta fila nueva al final de la tabla real
       requestBody: {
         values: [rowData],
       },
