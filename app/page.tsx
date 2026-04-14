@@ -43,7 +43,7 @@ export default function EncuestaNeoBrutalism() {
       title: "DEMOGRÁFICOS",
       questions: [
         { id: "DEM01", text: "1. ¿Cuál es su edad?", options: ["18-23", "24-29", "30-35", "Mayor de 35"] },
-        { id: "DEM02", text: "2. Género", options: ["Masculino", "Femenino", "Otro"] },
+        { id: "DEM02", text: "2. Sexo", options: ["Masculino", "Femenino", "Otro"] },
         { id: "DEM03", text: "3. Ocupación", options: ["Estudiante", "Empleado", "Emprendedor / Independiente", "Otro"] },
       ]
     },
@@ -51,29 +51,29 @@ export default function EncuestaNeoBrutalism() {
       title: "HÁBITOS & FILTRO",
       questions: [
         { id: "FIL01", text: "4. ¿Consume o ha consumido vapes en los últimos 6 meses?", options: ["Sí", "No"] },
-        { id: "FIL02", text: "5. ¿Con qué frecuencia desecha un vape agotado?", options: ["Semanal", "Quincenal", "Mensual", "Semestral", "Anual"] }
+        { id: "FIL02", text: "5. ¿Con qué frecuencia desecha un vape agotado?", options: ["Semanal", "Mensual", "Semestral", "Anual"] }
       ]
     },
     {
       title: "UTILIDAD PERCIBIDA (UP)",
       questions: [
         { id: "UP01", text: "6. El reciclaje de vapes mediante VoltaVape es una solución útil para reducir la basura electrónica.", type: "likert" },
-        { id: "UP02", text: "7. Considero que transformar vapes en powerbanks previene la contaminación del agua por toxinas.", type: "likert" },
+        { id: "UP02", text: "7. Considero que transformar vapes en pilas portátiles previene la contaminación del agua por toxinas.", type: "likert" },
         { id: "UP03", text: "8. Participar en VoltaVape es provechoso para contribuir a la sostenibilidad local.", type: "likert" }
       ]
     },
     {
       title: "FACILIDAD DE USO (FU)",
       questions: [
-        { id: "FU01", text: "9. Sería fácil ubicar los puntos de recolección de VoltaVape en mi universidad o ciudad.", type: "likert" },
-        { id: "FU02", text: "10. El proceso de entregar mi vape a cambio de un descuento me parecería sencillo de realizar.", type: "likert" },
-        { id: "FU03", text: "11. Guardar mis vapes para reciclarlos no representaría un esfuerzo extra en mi rutina diaria.", type: "likert" }
+        { id: "FU01", text: "9. Es fácil ubicar los puntos de recolección de VoltaVape en mi universidad o ciudad.", type: "likert" },
+        { id: "FU02", text: "10. El proceso de entregar mi vape a cambio de un descuento es sencillo de realizar.", type: "likert" },
+        { id: "FU03", text: "11. Guardar mis vapes para reciclarlos representaría un esfuerzo extra en mi rutina diaria.", type: "likert" }
       ]
     },
     {
       title: "INFLUENCIA SOCIAL (IS)",
       questions: [
-        { id: "IS01", text: "12. Mis amigos y compañeros universitarios piensan que debería reciclar mis vapes usados.", type: "likert" },
+        { id: "IS01", text: "12. Mi familia apoya que compre una pila portatil ecologica.", type: "likert" },
         { id: "IS02", text: "13. Las personas que son importantes para mí apoyarían que compre un powerbank ecológico.", type: "likert" },
         { id: "IS03", text: "14. Las campañas de concientización y la opinión pública me motivan a reciclar.", type: "likert" }
       ]
@@ -81,25 +81,25 @@ export default function EncuestaNeoBrutalism() {
     {
       title: "CONFIANZA (CO)",
       questions: [
-        { id: "CO01", text: "15. Confío en que un powerbank ensamblado a partir de vapes tiene una calidad duradera.", type: "likert" },
-        { id: "CO02", text: "16. Siento seguridad al usar una batería reciclada porque cuenta con sistemas de protección BMS.", type: "likert" },
-        { id: "CO03", text: "17. Creo que VoltaVape manejará los residuos tóxicos restantes de manera transparente.", type: "likert" }
+        { id: "CO01", text: "15. Confío en que una pila portatil ensamblada a partir de vapes tiene una calidad duradera.", type: "likert" },
+        { id: "CO02", text: "16. Tengo seguridad al usar una bateria portatil reciclada por que cuenta con un sistema de seguridad de carga", type: "likert" },
+        { id: "CO03", text: "17. VoltaVape manejará los residuos tóxicos restantes de manera transparente.", type: "likert" }
       ]
     },
     {
       title: "SOCIO-ECONÓMICAS (VA)",
       questions: [
-        { id: "VA01", text: "18. Siento una obligación moral de reciclar mis aparatos electrónicos para cuidar el ambiente.", type: "likert" },
-        { id: "VA02", text: "19. Estaría dispuesto/a a pagar $250 - $450 MXN por un powerbank reciclado VoltaVape.", type: "likert" },
-        { id: "VA03", text: "20. Un incentivo económico o descuentos incrementaría mi interés en regresar vapes.", type: "likert" }
+        { id: "VA01", text: "18. Considero que es mi responsabilidad moral reciclar mis aparatos electronicos", options: ["Sí", "No"] },
+        { id: "VA02", text: "19. Estaría dispuesto/a a pagar $250 - $450 MXN por una pila portatil reciclada VoltaVape.", options: ["Sí", "No"] },
+        { id: "VA03", text: "20. Un incentivo económico o descuentos incrementaría mi interés en regresar vapes.", options: ["Sí", "No"] }
       ]
     },
     {
       title: "INTENCIÓN FINAL (IP)",
       questions: [
-        { id: "IP01", text: "21. Tengo la intención de entregar mis próximos vapes agotados a los contenedores.", type: "likert" },
-        { id: "IP02", text: "22. Planeo apoyar a la iniciativa o adquirir un powerbank de VoltaVape en los próximos 12 meses.", type: "likert" },
-        { id: "IP03", text: "23. Recomendaría a otros usuarios de vapes que participen en este modelo.", type: "likert" }
+        { id: "IP01", text: "21. Tengo la intención de entregar mis próximos vapes agotados a los contenedores.", options: ["Sí", "No"] },
+        { id: "IP02", text: "22. Planeo apoyar a la iniciativa o adquirir una pila portatil de VoltaVape en los próximos 12 meses.", options: ["Sí", "No"] },
+        { id: "IP03", text: "23. Recomendaría a otros usuarios de vapes que participen en este modelo.", options: ["Sí", "No"] }
       ]
     }
   ];
@@ -115,12 +115,6 @@ export default function EncuestaNeoBrutalism() {
   };
 
   const nextStep = async () => {
-    // End survey if Age > 35
-    if (step === 1 && formData["DEM01"] === "Mayor de 35") {
-      setSubmitted(true);
-      return;
-    }
-
     if (!isStepComplete()) {
       alert("Por favor, responda todas las preguntas de esta sección antes de avanzar. (¡El rigor metodológico es vital!)");
       return;
@@ -151,9 +145,7 @@ export default function EncuestaNeoBrutalism() {
           <CheckCircle className="w-24 h-24 mx-auto mb-6 text-[#A3E635] drop-shadow-[4px_4px_0_#000]" />
           <h2 className="text-5xl font-black uppercase mb-4">¡Impacto Logrado!</h2>
           <p className="text-2xl font-bold">
-            {formData["DEM01"] === "Mayor de 35" 
-              ? "Para este estudio analizamos residentes de 18-35 años, pero valoramos enormemente su interés. ¡Gracias por promover la sustentabilidad!"
-              : "Tus respuestas han sido registradas para el análisis factorial. ¡Gracias por impulsar la economía circular en la UAT y Tamaulipas!"}
+            Tus respuestas han sido registradas para el análisis factorial. ¡Gracias por impulsar la economía circular en la UAT y Tamaulipas!
           </p>
         </div>
       </div>
@@ -203,10 +195,10 @@ export default function EncuestaNeoBrutalism() {
                         {/* Desktop scale legend */}
                         <div className="hidden md:flex justify-between text-xs font-bold text-gray-500 uppercase mb-2">
                           <span>1 = Totalmente en desacuerdo</span>
-                          <span>7 = Totalmente de acuerdo</span>
+                          <span>5 = Totalmente de acuerdo</span>
                         </div>
                         <div className="flex flex-wrap md:flex-nowrap gap-2 justify-between">
-                          {[1,2,3,4,5,6,7].map(num => (
+                          {[1,2,3,4,5].map(num => (
                             <button
                               key={num}
                               onClick={() => handleSelect(q.id, num.toString())}
