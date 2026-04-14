@@ -56,8 +56,9 @@ export async function POST(req: Request) {
 
     await sheets.spreadsheets.values.append({
       spreadsheetId: GOOGLE_SPREADSHEET_ID,
-      range: 'A:X', // Omite el nombre de la hoja para que use la por defecto
+      range: 'A1', // Apuntar a A1 ayuda a Google a buscar el final de la tabla desde el principio
       valueInputOption: 'USER_ENTERED',
+      insertDataOption: 'INSERT_ROWS', // Obliga a insertar una nueva fila siempre, evitando sobrescribir
       requestBody: {
         values: [rowData],
       },
